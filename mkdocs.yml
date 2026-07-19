@@ -1,0 +1,51 @@
+site_name: Informatique Gymnase
+site_description: Ressources et cours d'informatique
+site_author: Kévin Faustini
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+
+nav:
+  - Accueil: index.md
+
+  - Enseignement:
+      - 1m:
+          - Accueil: 1m/index.md
+          - Calendrier: 1m/calendrier.md
+          - FAQ: 1m/faq.md
+          - Thématiques:
+              - Algorithmique: 1m/thematiques/algo.md
+              - Programmation: 1m/thematiques/prog.md
+              - Architecture des ordinateurs: 1m/thematiques/archord.md
+              - Enjeux de Société: 1m/thematiques/enjeux.md
+
+      - 2m:
+          - Accueil: 2m/index.md
+          - Calendrier: 2m/calendrier.md
+          - FAQ: 2m/faq.md
+          - Thématiques:
+              - Algorithmique: 2m/thematiques/algo.md
+              - Programmation: 2m/thematiques/prog.md
+              - Réseaux: 2m/thematiques/networks.md
+              - Enjeux de Société: 2m/thematiques/enjeux.md
+
+      - 2c:
+          - Accueil: 2c/index.md
+          - Calendrier: 2c/calendrier.md
+          - FAQ: 2c/faq.md
+          - Thématiques:
+              - Algorithmique: 2c/thematiques/algo.md
+              - Programmation: 2c/thematiques/prog.md
+              - Architecture des ordinateurs: 2c/thematiques/archord.md
+              - Enjeux de Société: 2c/thematiques/enjeux.md
+
+  - Ressources: ressources/index.md
+  - À propos: a-propos.md
