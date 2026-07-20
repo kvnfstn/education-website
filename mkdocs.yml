@@ -12,40 +12,97 @@ theme:
     - search.suggest
     - search.highlight
 
+plugins:
+    - search:
+        lang: fr
+        separator: '[\s\-]+'
+    - git-revision-date-localized:
+        fallback_to_build_date: true
+        locale: fr
+        timezone: Europe/Zurich
+    - awesome-pages
+    - macros
+    - calendar:
+        tz: Europe/Zurich
+
+extra:
+    calendar_plugin:
+        start: 2026-08-01
+        end: 2027-07-31
+    cal:
+        start: 2026-08-01
+        end: 2027-07-31
 
 nav:
   - Accueil: index.md
 
   - Enseignement:
-      - 1m:
-          - Accueil: 1m/index.md
-          - Calendrier: 1m/calendrier.md
-          - FAQ: 1m/faq.md
+      - 1M1:
+          - Accueil: 1m/1M1/index.md
+          - Calendrier: 1m/1M1/calendrier.md
+          - FAQ: 1m/1M1/faq.md
           - Thématiques:
-              - Algorithmique: 1m/thematiques/algo.md
-              - Programmation: 1m/thematiques/prog.md
-              - Architecture des ordinateurs: 1m/thematiques/archord.md
-              - Enjeux de Société: 1m/thematiques/enjeux.md
+              - Algorithmique: 1m/1M1/thematiques/algo.md
+              - Programmation: 1m/1M1/thematiques/prog.md
+              - Architecture des ordinateurs: 1m/1M1/thematiques/archord.md
+              - Enjeux de Société: 1m/1M1/thematiques/enjeux.md
 
-      - 2m:
-          - Accueil: 2m/index.md
-          - Calendrier: 2m/calendrier.md
-          - FAQ: 2m/faq.md
+      - 1M2:
+          - Accueil: 1m/1M2/index.md
+          - Calendrier: 1m/1M2/calendrier.md
+          - FAQ: 1m/1M2/faq.md
           - Thématiques:
-              - Algorithmique: 2m/thematiques/algo.md
-              - Programmation: 2m/thematiques/prog.md
-              - Réseaux: 2m/thematiques/networks.md
-              - Enjeux de Société: 2m/thematiques/enjeux.md
+              - Algorithmique: 1m/1M2/thematiques/algo.md
+              - Programmation: 1m/1M2/thematiques/prog.md
+              - Architecture des ordinateurs: 1m/1M2/thematiques/archord.md
+              - Enjeux de Société: 1m/1M2/thematiques/enjeux.md
 
-      - 2c:
-          - Accueil: 2c/index.md
-          - Calendrier: 2c/calendrier.md
-          - FAQ: 2c/faq.md
+      - 2M1:
+          - Accueil: 2m/2M1/index.md
+          - Calendrier: 2m/2M1/calendrier.md
+          - FAQ: 2m/2M1/faq.md
           - Thématiques:
-              - Algorithmique: 2c/thematiques/algo.md
-              - Programmation: 2c/thematiques/prog.md
-              - Architecture des ordinateurs: 2c/thematiques/archord.md
-              - Enjeux de Société: 2c/thematiques/enjeux.md
+              - Algorithmique: 2m/2M1/thematiques/algo.md
+              - Programmation: 2m/2M1/thematiques/prog.md
+              - Réseaux: 2m/2M1/thematiques/networks.md
+              - Enjeux de Société: 2m/2M1/thematiques/enjeux.md
+
+      - 2M4:
+          - Accueil: 2m/2M4/index.md
+          - Calendrier: 2m/2M4/calendrier.md
+          - FAQ: 2m/2M4/faq.md
+          - Thématiques:
+              - Algorithmique: 2m/2M4/thematiques/algo.md
+              - Programmation: 2m/2M4/thematiques/prog.md
+              - Réseaux: 2m/2M4/thematiques/networks.md
+              - Enjeux de Société: 2m/2M4/thematiques/enjeux.md
+
+      - 2CPe1:
+          - Accueil: 2c/2CPe1/index.md
+          - Calendrier: 2c/2CPe1/calendrier.md
+          - FAQ: 2c/2CPe1/faq.md
+          - Thématiques:
+              - Algorithmique: 2c/2CPe1/thematiques/algo.md
+              - Programmation: 2c/2CPe1/thematiques/prog.md
+              - Architecture des ordinateurs: 2c/2CPe1/thematiques/archord.md
+              - Enjeux de Société: 2c/2CPe1/thematiques/enjeux.md
+
+      - 2CPe2:
+          - Accueil: 2c/2CPe2/index.md
+          - Calendrier: 2c/2CPe2/calendrier.md
+          - FAQ: 2c/2CPe2/faq.md
+          - Thématiques:
+              - Algorithmique: 2c/2CPe2/thematiques/algo.md
+              - Programmation: 2c/2CPe2/thematiques/prog.md
+              - Architecture des ordinateurs: 2c/2CPe2/thematiques/archord.md
+              - Enjeux de Société: 2c/2CPe2/thematiques/enjeux.md
 
   - Ressources: ressources/index.md
   - À propos: a-propos.md
+
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/fullcalendar@7.0.1/all/global.min.js
+
+extra_css:
+    - https://cdn.jsdelivr.net/npm/fullcalendar@7.0.1/skeleton.min.css
